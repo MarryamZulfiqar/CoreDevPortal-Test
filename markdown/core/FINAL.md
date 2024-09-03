@@ -15,4 +15,4 @@ Here's a quick recap of what we covered:
 
 # Claim your Core Developer NFT
 
-✅ You'll receive the Core Developer NFT after completing successfully completing all of the lessons and submitting it via the submission link.
+✅ To receive the Core Developer NFT for successfully completing all of the lessons submit your wallet address by filling up **this form**.

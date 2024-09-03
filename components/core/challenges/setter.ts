@@ -5,35 +5,20 @@ declare let window: {
   ethereum: ethers.providers.ExternalProvider;
 };
 
-const setValue = async (contractAddress: string, value: string) => {
+const setValue = async (contractAddress: string, value: number) => {
   try {
-    // Check if window.ethereum is available
-    if (!window.ethereum) {
-      throw new Error('Ethereum provider not found. Please install MetaMask.');
-    }
-
-    // Create a provider and get the signer
     const provider = new ethers.providers.Web3Provider(window.ethereum);
-    await provider.send('eth_requestAccounts', []);
     const signer = provider.getSigner();
-
-    // Instantiate the contract
-    const contract = new ethers.Contract(
-      contractAddress,
-      HelloWorldJson.abi,
-      signer,
-    );
-
-    // Call the setGreeting method
-    const transactionResult = await contract.setGreeting(value, {
-      gasLimit: 500000, // Adjust as needed
-    });
-
-    // Wait for the transaction to be mined
+    // try to figure out the expected parameters
+    const contract = new ethers.Contract(undefined);
+    // try to figure out the expected method
+    const transactionResult = undefined;
     const receipt = await transactionResult.wait();
     return {hash: receipt.transactionHash};
   } catch (error) {
-    return {error: error.message};
+    return {
+      error: error.message,
+    };
   }
 };
 
