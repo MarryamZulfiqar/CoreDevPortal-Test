@@ -44,26 +44,13 @@ md
 
 # contracts
 /dist
-/contracts/solana/program/target/
-/contracts/polygon/SimpleStorage/node_modules
-/contracts/polygon/SimpleStorage/.secret
-/contracts/polygon/SimpleStorage/build
-/contracts/polygon/SimpleStorage/package-lock.json
 /contracts/core/HelloWorld/node_modules
 /contracts/core/HelloWorld/.secret
 /contracts/core/HelloWorld/build
 /contracts/core/HelloWorld/package-lock.json
-/contracts/secret/mysimplecounter
 
 # credentials
 /credentials
-
-# near
-neardev
-contracts/near/target/
-/solana-wallet
-/test-ledger
-/archives
 
 # subgraphs
 subgraphs/punks

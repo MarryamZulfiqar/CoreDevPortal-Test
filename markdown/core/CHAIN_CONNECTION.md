@@ -93,7 +93,7 @@ const connect = async () => {
 
 # ✅ Make sure it works
 
-## Once the code in `components/core/challenges/connect.ts` is complete, click on **Check Metamask Connection** to open Metamask and connect to Polygon.
+## Once the code in `components/core/challenges/connect.ts` is complete, click on **Check Metamask Connection** to open Metamask and connect to Core Blockchain Testnet.
 
 # 🔐 Addresses, Wallets, and Mnemonics
 

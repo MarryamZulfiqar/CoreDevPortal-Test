@@ -2,20 +2,17 @@ import styled from 'styled-components';
 
 import {CHAINS_CONFIG} from 'lib/constants';
 import {CHAINS} from 'types';
-import {PolygonLogo} from './polygon';
 
 const ProtocolLogo = ({
   chainId,
-  size = 35,
+  size = 1115,
 }: {
   chainId: CHAINS;
   size: number;
 }) => {
   const {logoUrl} = CHAINS_CONFIG[chainId];
 
-  if (chainId === CHAINS.POLYGON) {
-    return <PolygonLogo size={size} />;
-  } else {
+  if (chainId === CHAINS.CORE) {
     return <Logo src={logoUrl} size={size} />;
   }
 };

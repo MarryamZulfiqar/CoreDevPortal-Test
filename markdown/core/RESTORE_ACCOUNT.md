@@ -76,4 +76,4 @@ When you have completed the code in `components/protocols/core/challenges/restor
 
 # 🏁 Conclusion
 
-Congratulations! We have gone from zero to **Polygon**, covering all the most fundamental concepts needed for developers to succeed in using **Polygon**. From connecting to the network to interacting with smart contracts, you have completed coding challenges and created a functional yet basic dApp.
+Congratulations! We have gone from zero to **Core** hero, covering all the most fundamental concepts needed for developers to succeed in using **Core**. From connecting to the network to interacting with smart contracts, you have completed coding challenges and created a functional yet basic dApp.
