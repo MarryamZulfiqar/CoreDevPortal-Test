@@ -33,7 +33,7 @@ The first task is to connect to the Core blockchain TestNet by adding it to the 
   - Block Explorer URL: `https://scan.test.btcs.network`
 - Double check the information, then click on the Save button.
 
-![add-bsc-testnet-to-metamask](/add_core_testnet.png)
+![add-core-testnet-to-metamask](/add_core_testnet.png)
 
 We use the testnet for development before moving into production on the main network or "mainnet".
 

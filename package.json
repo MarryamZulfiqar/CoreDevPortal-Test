@@ -1,5 +1,5 @@
 {
-  "name": "learn-web3-dapp",
+  "name": "core-dev-playground",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "truffle-bsc": "yarn global add truffle && cd ./contracts/bsc/HelloWorld && yarn && truffle obtain --solc 0.8.16",
     "prepare": "husky install"
   },
   "dependencies": {

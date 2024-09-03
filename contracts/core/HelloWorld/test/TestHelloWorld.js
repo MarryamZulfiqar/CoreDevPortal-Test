@@ -1,4 +1,4 @@
-var helloworld = artifacts.require('../contracts/bsc/HelloWorld');
+var helloworld = artifacts.require('../contracts/HelloWorld');
 
 contract('HelloWorld', function (accounts) {
   let instance;

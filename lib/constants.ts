@@ -16,7 +16,7 @@ export const CHAINS_CONFIG: ChainsType = {
     label: 'Core',
     active: true,
     logoUrl:
-      'https://d257b89266utxb.cloudfront.net/galaxy/images/logo/bsc-logo.png',
+      'https://miro.medium.com/v2/resize:fit:400/1*mBBtjPJv50S3d9Q1gS8O2w.png',
     protocol: CORE_PROTOCOLS.RPC,
     network: CORE_NETWORKS.TESTNET,
     steps: [

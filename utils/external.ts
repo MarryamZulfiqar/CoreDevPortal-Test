@@ -18,7 +18,7 @@ export const getNodeURL = (
 const getTestnetNodeURL = (chain: CHAINS): string => {
   switch (chain) {
     case CHAINS.CORE:
-      return 'https://data-seed-prebsc-1-s1.binance.org:8545';
+      return 'https://rpc.test.btcs.network';
     default:
       return '';
   }
