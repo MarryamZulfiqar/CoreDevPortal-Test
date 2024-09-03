@@ -1,11 +1,11 @@
-import { ethers } from 'ethers';
+import {ethers} from 'ethers';
 import HelloWorldJson from './HelloWorld.json';
 
 declare let window: {
   ethereum: ethers.providers.ExternalProvider;
 };
 
-const setValue = async (contractAddress: string, value: string) => { // Ensure value is a string
+const setValue = async (contractAddress: string, value: string) => {
   try {
     // Check if window.ethereum is available
     if (!window.ethereum) {
@@ -18,7 +18,11 @@ const setValue = async (contractAddress: string, value: string) => { // Ensure v
     const signer = provider.getSigner();
 
     // Instantiate the contract
-    const contract = new ethers.Contract(contractAddress, HelloWorldJson.abi, signer);
+    const contract = new ethers.Contract(
+      contractAddress,
+      HelloWorldJson.abi,
+      signer,
+    );
 
     // Call the setGreeting method
     const transactionResult = await contract.setGreeting(value, {
@@ -27,11 +31,10 @@ const setValue = async (contractAddress: string, value: string) => { // Ensure v
 
     // Wait for the transaction to be mined
     const receipt = await transactionResult.wait();
-    return { hash: receipt.transactionHash };
+    return {hash: receipt.transactionHash};
   } catch (error) {
-    return { error: error.message };
+    return {error: error.message};
   }
 };
 
 export default setValue;
-
