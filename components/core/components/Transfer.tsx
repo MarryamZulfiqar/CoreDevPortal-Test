@@ -59,7 +59,7 @@ const Transfer = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    (View on BscScan)
+                    (View on Core Scan)
                   </a>
                 </Space>
               }
