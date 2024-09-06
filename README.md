@@ -23,7 +23,7 @@ Make sure you have installed [git](https://git-scm.com/book/en/v2/Getting-Starte
 Then clone the repo, install dependencies and start the server by running all these commands:
 
 ```text
-git clone https://github.com/RumeelHussain/CorePlayground.git
+git clone https://github.com/MarryamZulfiqar/CoreDevPortal-Test.git
 cd CorePlayground
 yarn
 yarn dev
