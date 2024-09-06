@@ -14,7 +14,7 @@ We will guide you through using the various blockchain JavaScript SDKs to intera
 
 The best way to go through those courses is using [Gitpod](https://gitpod.io). Gitpod provides prebuilt developer environments in your browser, powered by VS Code. Just sign in using GitHub and you'll be up and running in seconds without having to do any manual setup 🔥
 
-[**Open this repo on Gitpod**](https://github.com/MarryamZulfiqar/CoreDevPortal-Test.git)
+[**Open this repo on Gitpod**](https://gitpod.io/#https://github.com/MarryamZulfiqar/CoreDevPortal-Test.git)
 
 ## 🐑 Clone locally
 
