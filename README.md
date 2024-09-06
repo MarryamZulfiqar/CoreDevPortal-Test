@@ -6,7 +6,7 @@ It's a Next.js app that uses React, TypeScript and smart contract languages (mos
 
 We will guide you through using the various blockchain JavaScript SDKs to interact with the Core network.
 
-- [Let us know which protocol you'd like us to cover](https://github.com/MarryamZulfiqar/CoreDevPortal-Test/issues)
+- [Let us know if you are facing any issues or what us to cover more dApps](https://github.com/MarryamZulfiqar/CoreDevPortal-Test/issues)
 
 # 🧑‍💻 Get started
 
