@@ -24,21 +24,30 @@ _It is important to note that throughout the Pathway, we will refer to the_ ethe
 const connect = async () => {
   try {
     const provider = undefined;
+
     if (provider) {
-      await undefined;
-      const signer = undefined;
-      const address = undefined;
-      return {
-        address,
-      };
+      // Request the currently selected accounts in MetaMask
+      const accounts = undefined;
+
+      // Make sure you have accounts and get the first one (currently selected)
+      if (accounts.length > 0) {
+        const address = undefined;
+        return {
+          address,
+        };
+      } else {
+        return {
+          error: 'No accounts found. Please select an account in MetaMask.',
+        };
+      }
     } else {
       return {
-        error: 'Please install Metamask at https://metamask.io',
+        error: 'Please install MetaMask at https://metamask.io',
       };
     }
   } catch (error) {
     return {
-      error: 'An unexpected error occurs',
+      error: 'An unexpected error occurred',
     };
   }
 };
@@ -63,21 +72,30 @@ Still not sure how to do this? No problem! The solution is below so you don't ge
 const connect = async () => {
   try {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
+
     if (provider) {
-      await provider.send('eth_requestAccounts', []);
-      const signer = provider.getSigner();
-      const address = await signer.getAddress();
-      return {
-        address,
-      };
+      // Request the currently selected accounts in MetaMask
+      const accounts = await provider.send('eth_requestAccounts', []);
+
+      // Make sure you have accounts and get the first one (currently selected)
+      if (accounts.length > 0) {
+        const address = accounts[0];
+        return {
+          address,
+        };
+      } else {
+        return {
+          error: 'No accounts found. Please select an account in MetaMask.',
+        };
+      }
     } else {
       return {
-        error: 'Please install Metamask at https://metamask.io',
+        error: 'Please install MetaMask at https://metamask.io',
       };
     }
   } catch (error) {
     return {
-      error: 'An unexpected error occurs',
+      error: 'An unexpected error occurred',
     };
   }
 };
@@ -87,7 +105,7 @@ const connect = async () => {
 
 - First, we need to define the provider by calling `Web3Provider` method of `providers`.
 - We need to ensure that Metamask connects to the page, and that we can query the currently selected account in Metamask. This is done by using the method `send` on the provider, to send the `eth_requestAccounts` query. This will bring up a Metamask dialog, asking the user to unlock their Metamask if it is locked, or to connect an account to the page if Metamask is unlocked - this account functions as a `signer`.
-- As said above the `signer` represents the current connected account. Then, calling the `getAddress` method will do the job of querying the address of the current connected account.
+- As said above the `signer` represents the current connected account. Then, calling the `accounts[0]` method will do the job of fetching the address of the current connected account.
 
 ---
 
