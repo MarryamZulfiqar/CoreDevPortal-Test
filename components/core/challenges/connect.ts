@@ -4,6 +4,7 @@ declare let window: {
   ethereum: ethers.providers.ExternalProvider;
 };
 
+const connect = async () => {
   try {
     const provider = undefined;
 
