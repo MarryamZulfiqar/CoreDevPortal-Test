@@ -100,5 +100,11 @@
     "react-test-renderer": "^17.0.2",
     "shelljs": "^0.8.4",
     "typescript": "^4.4.4"
+  },
+  "overrides": {
+    "react-no-ssr": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    }
   }
 }

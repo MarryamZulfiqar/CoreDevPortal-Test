@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
   renderSnippet() {
     if (process.env.APP_ENV === 'development') {
-      return '// bnb devs are cool';
+      return '// core devs are cool';
     } else {
       const opts = {
         apiKey: 'KLQshYRaDKzGsqjDttQ58EJDfBK8MKTy',

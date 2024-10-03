@@ -37,8 +37,6 @@ The first task is to connect to the Core blockchain TestNet by adding it to the 
 
 We use the testnet for development before moving into production on the main network or "mainnet".
 
-If you experience issues with the specified endpoint, use one of the other endpoints listed at <https://docs.bnbchain.org/docs/rpc/#> - below the Testnet heading.
-
 ---
 
 # 🧩 API keys

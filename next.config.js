@@ -1,6 +1,4 @@
-const withTM = require('next-transpile-modules')([
-  
-]);
+const withTM = require('next-transpile-modules')([]);
 
 module.exports = withTM({
   reactStrictMode: true,
@@ -14,7 +12,7 @@ module.exports = withTM({
     // Enables the styled-components SWC transform
     styledComponents: true,
   },
-  webpack5: true,
+  // webpack5: true,
   webpack: (config, {isServer}) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;
